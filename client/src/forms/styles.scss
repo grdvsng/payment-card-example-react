@@ -1,0 +1,129 @@
+.payment-card-container
+{
+    min-width  : 40%;
+    margin     : auto 0;
+    display    : table;
+    margin     : auto;
+    margin-top : auto;
+    margin-top : 40px;
+
+    .ant-input-number-wrapper, .ant-input-number-group
+    {
+        background: inherit !important;
+
+        .ant-input-number
+        {
+            background  : inherit !important;
+            border      : 0 !important;
+            font-family : Roboto !important;
+            outline     : none !important;
+            font-size   : larger !important;
+        }
+
+        .ant-input-number-focused {
+            @extend .ant-input-number;
+
+            outline    : none !important;
+            border     : none !important;
+            box-shadow : none !important;
+        }
+
+        .ant-input-number-group-addon
+        {
+            @extend .ant-input-number;
+        }
+    }
+
+    .ant-btn-primary:hover, 
+    .ant-btn-primary:focus {
+        border-color: brown !important;
+        background: #242424 !important;
+    }
+}
+
+.expire-block
+{
+    display : flex;
+    float   : inline-start;
+}
+
+.submit-button-standard
+{
+    margin-top: 2px;
+    color: white;    
+    font-family: Roboto;
+    width: 100%;
+    height: auto;
+    font-size: x-large;
+    font-weight: bold;
+    background: #242424;
+    border-color: #FFD700;
+    border-width: 5px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    text-align: left;
+}
+
+.amount-span-standard
+{
+    @extend .ant-input-number;
+
+    color: black !important;
+    font-size: large;
+    margin-right: 4px !important;
+    font-family: Roboto !important;
+    padding: 5px !important;
+    font-weight: bold !important;
+}
+
+.amount-span-standard:hover
+{
+    cursor: pointer !important;
+}
+
+.amount-span-standard-active
+{
+    background: #303030 !important;
+    color: #ffde25 !important;
+}
+
+
+.submit-button-standard:hover
+{
+    @extend .submit-button-standard;
+    
+    background: #242424;
+    border-color: #ffde25;
+}
+
+.submit-button-standard:disabled
+{
+    @extend .submit-button-standard;
+
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.on-loading
+{
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: loading !important;
+}
+
+.payment-card-container-loading
+{
+    @extend .on-loading;
+
+    * {
+        @extend .on-loading;
+    }
+}
+
+.amount-block-standard
+{
+    width: 100%;
+    margin-left: 2%;
+    padding: 5px !important;
+}

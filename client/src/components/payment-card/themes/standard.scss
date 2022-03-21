@@ -1,0 +1,31 @@
+@import './basic.scss';
+
+.payment-card-standard
+{
+    @extend .payment-card;
+
+    background: white !important;
+
+    .payment-card-owner
+    {
+        font-style: italic;
+        color: darkslategray;
+        font-weight: bold;
+    }
+
+    .payment-card-number
+    {
+        font-style: normal;
+        color: black;
+    }
+
+    .ant-card-head
+    {
+        background: #242424;
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        border-width: 8px;
+        border-color: #FFD700;
+    }
+}

@@ -1,0 +1,99 @@
+.payment-card 
+{
+    min-width : 30%    !important;
+    margin    : auto 0 !important;
+
+    *:focus {
+        outline    : none !important;
+        border     : none !important;
+        box-shadow : none !important;
+    }
+
+    * {
+        font-family: Roboto !important;
+    }
+
+    .validation-error
+    {
+        border: 2.5px outset #dc143c !important;
+        border: 2.5px outset #dc143c36 !important;
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-left-width: 2px;
+        border-top-width: 0px !important;
+        border-right-width: 0px !important;
+        border-left-width: 0px !important;
+    }
+
+    .validation-success
+    {
+        @extend .validation-error;
+
+        border-color: #008000   !important;
+        border-color: #00800024 !important;
+    }
+}
+
+.payment-card-owner
+{
+    background  : inherit !important;
+    border      : 0 !important;
+    font-family : Roboto !important;
+    outline     : none !important;
+    font-size   : larger !important;
+}
+
+.payment-card-number
+{
+    @extend .payment-card-owner;
+ 
+    font-size: x-large !important;
+}
+
+.payment-card-cvv
+{
+    @extend .payment-card-owner;
+ 
+    font-size: large !important;
+}
+
+.payment-card-expire
+{
+    @extend .payment-card-cvv;
+}
+
+.payment-card-tooltip
+{
+    @extend .payment-card-cvv;
+
+    text-align: left;
+    padding: 5px;
+    padding-right: 5px;
+    text-align: center;
+    background: none !important;
+    font-weight: bold;
+    font-style: italic !important;
+    text-align: revert-layer;
+    width: auto !important;
+    padding: 3px !important;
+}
+
+
+.payment-card-tooltip-error
+{
+    color: brown !important;
+}
+
+.payment-card-tooltip-error-icon
+{
+    color: brown !important;
+    font-weight: bold;
+}
+
+.payment-card-tooltip-tag
+{
+    font-size: large;
+    font-family: Roboto !important;
+    padding: 4px !important;
+    margin: 2px !important;
+}
