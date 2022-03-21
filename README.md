@@ -5,5 +5,4 @@
 * Run command 'npm run "heroku-postbuild"'
 
 #### Heroku
-* client: https://fastapi-react-test-77749.herokuapp.com/
-
+* client: https://payment-card-example-react.herokuapp.com/
