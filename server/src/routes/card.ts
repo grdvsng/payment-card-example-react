@@ -20,8 +20,6 @@ CardRouter.get( ':/id',  async ( req: Request, res: Response ) =>
 CardRouter.get( '/',  async ( _, res: Response ) => 
 {
     const result = await Card.findAll( );
-
-    console.log( result );
     
     return res.status(200).send( result );
 } )
