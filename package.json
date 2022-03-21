@@ -5,7 +5,7 @@
   "main": "srver/index.js",
   "scripts": {
     "start": "cd server && npm start && cd ..",
-    "heroku-postbuild": "cd server && npm install --unsafe-perm && npx tsc --build"
+    "heroku-postbuild": "cd server && npm install --unsafe-perm && npx tsc --build && cd ../client && npm install --unsafe-perm && npm run build"
   },
   "author": "grdvsng@gmail.com",
   "license": "ISC",
