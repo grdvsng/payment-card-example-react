@@ -50,7 +50,7 @@ class App extends React.Component
             
             <span className="reference-footer-link">
               <h4 className='author' >           
-                <a href="https://github.com/grdvsng" > author <BsHeartFill className="author-logo" />   
+                <a href="https://github.com/grdvsng" > author  
                 </a>
               </h4> 
             </span>
