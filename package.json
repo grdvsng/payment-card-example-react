@@ -2,7 +2,7 @@
   "name": "payment-card-example-react",
   "version": "1.0.0",
   "description": "",
-  "main": "srver/index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "cd server && cd build && node index.js",
     "heroku-postbuild": "cd server && npm install --unsafe-perm && npx tsc --build && cd ../client && npm install --unsafe-perm && npm run build"

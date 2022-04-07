@@ -50,7 +50,7 @@ class App extends React.Component
             
             <span className="reference-footer-link">
               <h4 className='author' >           
-                <a href="https://github.com/grdvsng"     > auth<BsHeartFill className="author-logo" onClick={ ( ) => window.open( "https://www.youtube.com/watch?v=SFe-108zQSI" ) }/>r    
+                <a href="https://github.com/grdvsng" > author <BsHeartFill className="author-logo" />   
                 </a>
               </h4> 
             </span>
